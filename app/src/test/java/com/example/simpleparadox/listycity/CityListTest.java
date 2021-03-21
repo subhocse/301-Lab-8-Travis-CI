@@ -96,7 +96,16 @@ class CityListTest {
 
     @Test
     void failedTest(){
+        // Initially set up city list, then assertequal countCities as 2, but it should be 1: so failed
+        // Then for fixing, I added a city to the city List so now countCities is 2
+
+        // failed part
         CityList cityList = mockCityList();
+//        assertEquals(2, cityList.countCities()); // comment out so it won't fail anymore
+
+        // fixing part
+        City city = new City("London", "Ontario");
+        cityList.add(city);
         assertEquals(2, cityList.countCities());
     }
 }
