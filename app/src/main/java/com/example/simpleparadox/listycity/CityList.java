@@ -84,7 +84,6 @@ public class CityList {
      * @return the index, or -1 if it does not exist in the list.
      */
     public int cityIndex(City city) {
-
-        return -1;
+        return this.cities.indexOf(city);
     }
 }

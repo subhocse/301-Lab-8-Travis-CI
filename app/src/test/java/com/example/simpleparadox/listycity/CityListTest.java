@@ -99,10 +99,10 @@ class CityListTest {
 
         CityList cityList = mockCityList();
 
-        City city = new City("Edmonton", "Alberta");
+        City city = new City("MyNewCity", "NB");
         cityList.add(city);
 
-        assertEquals(0, cityList.cityIndex(city));
+        assertEquals(1, cityList.cityIndex(city));
 
     }
 }
