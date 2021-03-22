@@ -77,4 +77,13 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Find the index of the specified city.
+     * @param city The city to find
+     * @return the index, or -1 if it does not exist in the list.
+     */
+    public int cityIndex(City city) {
+        return this.cities.indexOf(city);
+    }
 }
