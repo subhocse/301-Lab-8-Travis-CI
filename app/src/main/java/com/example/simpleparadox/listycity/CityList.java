@@ -47,7 +47,6 @@ public class CityList {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -76,5 +75,15 @@ public class CityList {
      */
     public int countCities() {
         return cities.size();
+    }
+
+    /**
+     * Given one city in the city list and another city not in the city list, this deletes the
+     * first city and adds the second city.
+     * @param original The city to remove from the city list.
+     * @param target The city to add to the city list.
+     */
+    public void replace(City original, City target) {
+
     }
 }
