@@ -84,6 +84,10 @@ public class CityList {
      * @param target The city to add to the city list.
      */
     public void replace(City original, City target) {
+        // Delete the old city
+        delete(original);
 
+        // Add the new city
+        add(target);
     }
 }
